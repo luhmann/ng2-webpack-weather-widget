@@ -1,0 +1,18 @@
+.weather {
+  box-shadow: #ccc 0 0 10px;
+  color: #333;
+  font: 200 1.5em 'Helvetica Neue', sans-serif;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.weather__detail {
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  .weather {
+    margin-bottom: 20px;
+  }
+}

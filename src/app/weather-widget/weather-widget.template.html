@@ -1,0 +1,7 @@
+<div class="weather">
+  <div class="weather__city">{{ city }}</div>
+  <div class="weather__detail" *ngIf="weatherData">
+    <img class="weather__detail__icon" [src]="generateIconUrl()" />
+    <div class="weather__detail__temp">{{ weatherData.main.temp | formatTemp }}</div>
+  </div>
+</div>

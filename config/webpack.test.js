@@ -22,7 +22,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'null'
+        loader: 'raw'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ]
   }

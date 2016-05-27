@@ -1,51 +1,34 @@
-/*global jasmine, __karma__, window*/
 Error.stackTraceLimit = Infinity;
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000;
 
-__karma__.loaded = function () {
-};
+require('core-js/es6');
+require('reflect-metadata');
 
-var distPath = '/base/dist/';
-var appPath = distPath + 'app/';
+require('zone.js/dist/zone');
+require('zone.js/dist/long-stack-trace-zone');
+require('zone.js/dist/async-test');
 
-function isJsFile(path) {
-  return path.slice(-3) == '.js';
-}
+const testingLibCore = require("angular2-testing-lite/core");
+const ng2PlatformBrowserDynamic = require("@angular/platform-browser-dynamic");
+const ng2PlatformBrowser = require('@angular/platform-browser/testing/browser_static')
 
-function isSpecFile(path) {
-  return path.slice(-8) == '.spec.js';
-}
+var appContext = require.context('../src', true, /\.spec\.ts/);
 
-function isAppFile(path) {
-  return isJsFile(path) && (path.substr(0, appPath.length) == appPath);
-}
+appContext.keys().forEach(appContext);
 
-var allSpecFiles = Object.keys(window.__karma__.files)
-  .filter(isSpecFile)
-  .filter(isAppFile);
+// var testing = require('@angular/core/testing');
+// var browser = require('@angular/platform-browser-dynamic/testing');
+//
+// testing.setBaseTestProviders(
+//   browser.TEST_BROWSER_DYNAMIC_PLATFORM_PROVIDERS,
+//   browser.TEST_BROWSER_DYNAMIC_APPLICATION_PROVIDERS
+// );
 
-// Load our SystemJS configuration.
-System.config({
-  baseURL: distPath
-});
 
-System.import('system-config.js').then(function() {
-  // Load and configure the TestComponentBuilder.
-  return Promise.all([
-    System.import('@angular/core/testing'),
-    System.import('@angular/platform-browser-dynamic/testing')
-  ]).then(function (providers) {
-    var testing = providers[0];
-    var testingBrowser = providers[1];
-
-    testing.setBaseTestProviders(testingBrowser.TEST_BROWSER_DYNAMIC_PLATFORM_PROVIDERS,
-      testingBrowser.TEST_BROWSER_DYNAMIC_APPLICATION_PROVIDERS);
-  });
-}).then(function() {
-  // Finally, load all spec files.
-  // This will run the tests directly.
-  return Promise.all(
-    allSpecFiles.map(function (moduleName) {
-      return System.import(moduleName);
-    }));
-}).then(__karma__.start, __karma__.error);
+testingLibCore.resetBaseTestProviders();
+testingLibCore.setBaseTestProviders(
+  ng2PlatformBrowser.TEST_BROWSER_STATIC_PLATFORM_PROVIDERS,
+  [
+    ng2PlatformBrowserDynamic.BROWSER_APP_DYNAMIC_PROVIDERS,
+    ng2PlatformBrowser.ADDITIONAL_TEST_BROWSER_PROVIDERS
+  ]
+);

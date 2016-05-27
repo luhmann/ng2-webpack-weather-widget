@@ -1,14 +1,16 @@
+/// <reference path="../typings/index.d.ts" />
+import { expect } from '../src/test/helper/utils';
 import { Ng2WebpackWeatherWidgetPage } from './app.po';
 
-describe('ng2-webpack-weather-widget App', function() {
+describe('ng2-webpack-weather-widget App', () => {
   let page: Ng2WebpackWeatherWidgetPage;
 
   beforeEach(() => {
     page = new Ng2WebpackWeatherWidgetPage();
   })
 
-  it('should display message saying app works', () => {
+  it('should display weather widgets', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('ng2-webpack-weather-widget works!');
+    expect(page.getWidgets().count()).to.eventually.equal(5);
   });
 });

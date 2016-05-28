@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CompressionPlugin = require('compression-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
 var helpers = require('./helpers');
 
@@ -25,6 +26,13 @@ module.exports = webpackMerge(commonConfig, {
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin('[name].[hash].css'),
+    new CompressionPlugin({
+      asset: "[path].gz[query]",
+      algorithm: "gzip",
+      test: /\.js$|\.html$/,
+      threshold: 0,
+      minRatio: 0.8
+    }),
     new webpack.DefinePlugin({
       'process.env': {
         'ENV': JSON.stringify(ENV)

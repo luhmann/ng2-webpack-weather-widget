@@ -1,4 +1,4 @@
-import {environment} from '../../index'
+import {environment} from '../../index';
 
 let baseUrl, apiKey;
 

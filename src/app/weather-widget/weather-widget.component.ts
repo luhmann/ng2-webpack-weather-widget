@@ -16,7 +16,7 @@ export class WeatherWidget implements OnInit {
 
   weatherData: any;
   errorMessage: Object;
-  constructor(private weatherService: OpenWeatherApi){};
+  constructor(private weatherService: OpenWeatherApi) {};
 
   ngOnInit() {
     this.weatherService.getWeatherForCity(this.city).subscribe(

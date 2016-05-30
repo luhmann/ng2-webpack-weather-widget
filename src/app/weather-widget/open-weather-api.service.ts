@@ -6,7 +6,7 @@ import { endpoint } from '../shared/';
 
 @Injectable()
 export class OpenWeatherApi {
-  constructor(private http: Http){};
+  constructor(private http: Http) {};
 
   getWeatherForCity(city: String): Observable<Object> {
     return this.http.get(endpoint.weatherData(city))

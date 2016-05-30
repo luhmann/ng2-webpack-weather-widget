@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import {provide} from "@angular/core";
+import {provide} from '@angular/core';
 import { inject, async, TestComponentBuilder } from 'angular2-testing-lite/core';
 import { describe, xdescribe, it, xit, beforeEachProviders, beforeEach } from 'angular2-testing-lite/mocha';
 import {Observable} from 'rxjs/Observable';
@@ -17,7 +17,7 @@ class MockOpenWeatherApi {
 }
 
 describe('Component: WeatherWidget', () => {
-  let builder:TestComponentBuilder;
+  let builder: TestComponentBuilder;
 
   beforeEachProviders(() => [
     KelvinToCelsiusPipe

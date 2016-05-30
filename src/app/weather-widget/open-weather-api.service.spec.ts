@@ -1,9 +1,9 @@
 import { expect } from 'chai';
-import { MockBackend, MockConnection } from "@angular/http/testing";
-import { Injectable, provide } from "@angular/core";
-import { Http, BaseRequestOptions, Response, ResponseOptions } from "@angular/http";
-import { inject, async, TestComponentBuilder } from "angular2-testing-lite/core";
-import { describe, xdescribe, it, xit, beforeEachProviders, beforeEach } from "angular2-testing-lite/mocha";
+import { MockBackend, MockConnection } from '@angular/http/testing';
+import { provide } from '@angular/core';
+import { Http, BaseRequestOptions, Response, ResponseOptions } from '@angular/http';
+import { inject, async } from 'angular2-testing-lite/core';
+import { describe, xdescribe, it, beforeEachProviders, beforeEach } from 'angular2-testing-lite/mocha';
 
 import { OpenWeatherApi } from './open-weather-api.service';
 
@@ -30,7 +30,7 @@ describe('WeatherWidget: Open Weather API Service', () => {
           new Response(new ResponseOptions({
             status: 200,
             body: {
-              "city": "Berlin"
+              'city': 'Berlin'
             }
           }))
         );
@@ -38,7 +38,7 @@ describe('WeatherWidget: Open Weather API Service', () => {
     }));
 
     it('should return the mock data', async(inject([OpenWeatherApi],
-      (service:OpenWeatherApi) => {
+      (service: OpenWeatherApi) => {
         service.getWeatherForCity('Berlin').toPromise()
           .then(resp => {
             expect(resp).to.exist;

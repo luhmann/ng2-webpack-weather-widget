@@ -6,7 +6,7 @@ import {OpenWeatherApi} from './weather-widget/open-weather-api.service';
 @Component({
   selector: 'my-app',
   directives: [WeatherWidget],
-  styles: [require('./app.styles.css')],
+  styles: [require('./app.styles.styl')],
   template: `
     <div class="app" [class.app_loading]="isLoading">
       <weather city="Berlin"></weather>

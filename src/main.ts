@@ -1,4 +1,4 @@
-require('./base.css');
+require('!!style!css!stylus!./app/shared/styles/global.styl');
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 

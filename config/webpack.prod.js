@@ -20,16 +20,14 @@ module.exports = webpackMerge(commonConfig, {
   htmlLoader: {
     minimize: false // workaround for ng2
   },
-
   plugins: [
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin(),
-    new ExtractTextPlugin('[name].[hash].css'),
     new CompressionPlugin({
       asset: "[path].gz[query]",
       algorithm: "gzip",
-      test: /\.js$|\.html$/,
+      test: /\.js$|\.html$|\.css$/,
       threshold: 0,
       minRatio: 0.8
     }),

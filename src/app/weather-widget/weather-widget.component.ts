@@ -7,7 +7,7 @@ import {KelvinToCelsiusPipe} from '../lib/kelvinToCelcius.pipe';
 @Component({
   selector: 'weather',
   pipes: [KelvinToCelsiusPipe],
-  styles: [require('./weather-widget.styles.css')],
+  styles: [require('./weather-widget.styles.styl')],
   template: require('./weather-widget.template.html')
 })
 export class WeatherWidget implements OnInit {

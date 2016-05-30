@@ -21,8 +21,8 @@ module.exports = {
         loader: 'null'
       },
       {
-        test: /\.css$/,
-        loader: 'raw'
+        test: /\.styl$/,
+        loader: 'raw!postcss-loader!stylus-loader'
       },
       {
         test: /\.json$/,

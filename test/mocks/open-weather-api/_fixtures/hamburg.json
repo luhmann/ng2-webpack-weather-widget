@@ -1,0 +1,39 @@
+{
+  "coord": {
+    "lon": 10,
+    "lat": 53.55
+  },
+  "weather": [{
+    "id": 800,
+    "main": "Clear",
+    "description": "clear sky",
+    "icon": "01d"
+  }],
+  "base": "cmc stations",
+  "main": {
+    "temp": 289.55,
+    "pressure": 1016,
+    "humidity": 59,
+    "temp_min": 288.15,
+    "temp_max": 290.15
+  },
+  "wind": {
+    "speed": 3.1,
+    "deg": 80
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1464421867,
+  "sys": {
+    "type": 1,
+    "id": 4883,
+    "message": 0.0046,
+    "country": "DE",
+    "sunrise": 1464404443,
+    "sunset": 1464464090
+  },
+  "id": 2911298,
+  "name": "Hamburg",
+  "cod": 200
+}

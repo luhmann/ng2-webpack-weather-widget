@@ -1,0 +1,39 @@
+{
+  "coord": {
+    "lon": 11.58,
+    "lat": 48.14
+  },
+  "weather": [{
+    "id": 800,
+    "main": "Clear",
+    "description": "clear sky",
+    "icon": "01d"
+  }],
+  "base": "cmc stations",
+  "main": {
+    "temp": 290.55,
+    "pressure": 1015,
+    "humidity": 82,
+    "temp_min": 289.26,
+    "temp_max": 292.04
+  },
+  "wind": {
+    "speed": 3.6,
+    "deg": 250
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1464422193,
+  "sys": {
+    "type": 1,
+    "id": 4887,
+    "message": 0.0033,
+    "country": "DE",
+    "sunrise": 1464405617,
+    "sunset": 1464462145
+  },
+  "id": 6940463,
+  "name": "Altstadt",
+  "cod": 200
+}

@@ -1,5 +1,6 @@
 /// <reference path="../typings/index.d.ts" />
-import { expect } from '../src/test/helper/utils';
+
+import { expect } from '../test/helper/utils';
 import { Ng2WebpackWeatherWidgetPage } from './app.po';
 
 describe('ng2-webpack-weather-widget App', () => {

@@ -2,16 +2,14 @@ import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 
-
-const BASE_URL = 'http://api.openweathermap.org/data/2.5/weather?q=';
-const API_KEY = '51cde100c00b0ec934144479e58b67eb';
+import { endpoint } from '../shared/';
 
 @Injectable()
 export class OpenWeatherApi {
   constructor(private http: Http){};
 
   getWeatherForCity(city: String): Observable<Object> {
-    return this.http.get(`${BASE_URL}${city}&appid=${API_KEY}`)
+    return this.http.get(endpoint.weatherData(city))
         .map(this.extractData)
         .catch(this.handleError);
   }

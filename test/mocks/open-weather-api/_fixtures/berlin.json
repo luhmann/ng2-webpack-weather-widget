@@ -1,0 +1,39 @@
+{
+  "coord": {
+    "lon": 13.41,
+    "lat": 52.52
+  },
+  "weather": [{
+    "id": 800,
+    "main": "Clear",
+    "description": "clear sky",
+    "icon": "01d"
+  }],
+  "base": "cmc stations",
+  "main": {
+    "temp": 295.06,
+    "pressure": 1015,
+    "humidity": 59,
+    "temp_min": 291.15,
+    "temp_max": 303.15
+  },
+  "wind": {
+    "speed": 1.5,
+    "deg": 50
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1464421660,
+  "sys": {
+    "type": 1,
+    "id": 4892,
+    "message": 0.0116,
+    "country": "DE",
+    "sunrise": 1464403959,
+    "sunset": 1464462934
+  },
+  "id": 2950159,
+  "name": "Berlin",
+  "cod": 200
+}

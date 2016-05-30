@@ -8,7 +8,7 @@ import 'rxjs/add/observable/of';
 import {WeatherWidget} from './weather-widget.component';
 import {OpenWeatherApi} from './open-weather-api.service';
 import {KelvinToCelsiusPipe} from '../lib/kelvinToCelcius.pipe';
-const mockWeatherApiResponse = require('../../test/mocks/OpenWeatherApi.response.json');
+const mockWeatherApiResponse = require('../../../test/mocks/open-weather-api/_fixtures/berlin.json');
 
 class MockOpenWeatherApi {
   getWeatherForCity(city: string): Observable<Object> {
@@ -61,7 +61,7 @@ describe('Component: WeatherWidget', () => {
         component.city = 'Berlin';
 
         fixture.detectChanges();
-        expect(element.querySelector('.weather__detail__temp').innerText).to.equal('22.3°C');
+        expect(element.querySelector('.weather__detail__temp').innerText).to.equal('21.91°C');
       });
   });
 
@@ -76,8 +76,8 @@ describe('Component: WeatherWidget', () => {
         component.city = 'Berlin';
 
         fixture.detectChanges();
-        expect(element.querySelector('img').getAttribute('src')).to.equal('http://openweathermap.org/img/w/04d.png');
-        expect(component.generateIconUrl()).to.equal('http://openweathermap.org/img/w/04d.png');
+        expect(element.querySelector('img').getAttribute('src')).to.equal('http://openweathermap.org/img/w/01d.png');
+        expect(component.generateIconUrl()).to.equal('http://openweathermap.org/img/w/01d.png');
       });
   });
 });

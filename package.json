@@ -4,15 +4,16 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "lint": "tslint \"src/**/*.ts\"",
-    "format": "clang-format -i -style=file --glob=src/**/*.ts",
+    "build": "NODE_ENV=production rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "pree2e": "webdriver-manager update && npm run build",
     "e2e": "http-server ./dist & protractor",
-    "start": "webpack-dev-server --inline --progress --port 8080",
-    "test": "karma start",
-    "test:watch": "npm run test -- --auto-watch --no-single-run",
-    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
-    "postinstall": "typings install"
+    "format": "clang-format -i -style=file --glob=src/**/*.ts",
+    "postinstall": "typings install",
+    "lint": "tslint \"src/**/*.ts\"",
+    "mocks": "dyson test/mocks 4444",
+    "start": "NODE_ENV=dev npm run mocks & webpack-dev-server --config config/webpack.dev.js --inline --progress --port 8080",
+    "test": "NODE_ENV=test karma start",
+    "test:watch": "npm run test -- --auto-watch --no-single-run"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +37,7 @@
     "codelyzer": "0.0.19",
     "compression-webpack-plugin": "^0.3.1",
     "css-loader": "^0.23.1",
+    "dyson": "^0.10.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-loader": "^0.4.3",

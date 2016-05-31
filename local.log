@@ -1,0 +1,266 @@
+
+BrowserStackLocal v5.5
+
+
+Connecting to BrowserStack using WebSocket protocol...
+Platform supports WebSocket connections.
+
+You can now access your local server(s) in our remote browser.
+
+
+Connecting to BrowserStack using WebSocket protocol...
+Platform supports WebSocket connections.
+
+
+Connecting to BrowserStack using WebSocket protocol...
+Platform supports WebSocket connections.
+
+
+Connecting to BrowserStack using WebSocket protocol...
+Press Ctrl-C to exit
+
+
+Platform supports WebSocket connections.
+
+DEBUG:  2016-5-31 23:41:38 Request to: localhost:8080
+DEBUG:  2016-5-31 23:41:38 [PARSING HANDSHAKE] Handshake request to localhost:8080
+DEBUG:  2016-5-31 23:41:38 Connecting to: localhost:8080
+DEBUG:  2016-5-31 23:41:38 Connected to: 127.0.0.1
+DEBUG:  2016-5-31 23:41:38 [PARSING REQUEST] GET / HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:38 [PARSING RESPONSE] HTTP/1.1 200 FROM localhost:8080
+DEBUG:  2016-5-31 23:41:38 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:38 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:38 [PARSING REQUEST] GET /polyfills.942abf3906331f1cb7f6.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:38 [PARSING RESPONSE] HTTP/1.1 200 FROM localhost:8080
+DEBUG:  2016-5-31 23:41:38 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:38 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:38 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Request to: localhost:8080
+DEBUG:  2016-5-31 23:41:39 [PARSING HANDSHAKE] Handshake request to localhost:8080
+DEBUG:  2016-5-31 23:41:39 Connecting to: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Request to: localhost:8080
+DEBUG:  2016-5-31 23:41:39 [PARSING HANDSHAKE] Handshake request to localhost:8080
+DEBUG:  2016-5-31 23:41:39 Connecting to: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Connected to: 127.0.0.1
+DEBUG:  2016-5-31 23:41:39 Connected to: 127.0.0.1
+DEBUG:  2016-5-31 23:41:39 [PARSING REQUEST] GET /vendor.942abf3906331f1cb7f6.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:39 [PARSING RESPONSE] HTTP/1.1 200 FROM localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 [PARSING REQUEST] GET /app.942abf3906331f1cb7f6.js HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:39 [PARSING RESPONSE] HTTP/1.1 200 FROM localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:39 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:40 [PARSING REQUEST] GET /favicon.ico HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Accept: */*
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:40 [PARSING RESPONSE] HTTP/1.1 404 FROM localhost:8080
+DEBUG:  2016-5-31 23:41:40 Writing response from: localhost:8080
+DEBUG:  2016-5-31 23:41:40 Request to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connected to: 178.62.213.57
+DEBUG:  2016-5-31 23:41:40 Connected to: 178.62.213.57
+DEBUG:  2016-5-31 23:41:40 Connected to: 178.62.213.57
+DEBUG:  2016-5-31 23:41:40 Connected to: 178.62.213.57
+DEBUG:  2016-5-31 23:41:40 Connected to: 178.62.213.57
+DEBUG:  2016-5-31 23:41:40 [PARSING REQUEST] GET /data/2.5/weather?q=Berlin&appid=51cde100c00b0ec934144479e58b67eb HTTP/1.1
+Host: api.openweathermap.org
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Origin: http://localhost:8080
+Accept: */*
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:40 [PARSING REQUEST] GET /data/2.5/weather?q=Hamburg&appid=51cde100c00b0ec934144479e58b67eb HTTP/1.1
+Host: api.openweathermap.org
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Origin: http://localhost:8080
+Accept: */*
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:40 [PARSING REQUEST] GET /data/2.5/weather?q=M%C3%BCnchen&appid=51cde100c00b0ec934144479e58b67eb HTTP/1.1
+Host: api.openweathermap.org
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Origin: http://localhost:8080
+Accept: */*
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:40 [PARSING REQUEST] GET /data/2.5/weather?q=New%20York&appid=51cde100c00b0ec934144479e58b67eb HTTP/1.1
+Host: api.openweathermap.org
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Origin: http://localhost:8080
+Accept: */*
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:40 [PARSING REQUEST] GET /data/2.5/weather?q=Tokyo&appid=51cde100c00b0ec934144479e58b67eb HTTP/1.1
+Host: api.openweathermap.org
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Origin: http://localhost:8080
+Accept: */*
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:40 [PARSING RESPONSE] HTTP/1.1 200 FROM api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Writing response from: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING RESPONSE] HTTP/1.1 200 FROM api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Writing response from: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING RESPONSE] HTTP/1.1 200 FROM api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Writing response from: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING RESPONSE] HTTP/1.1 200 FROM api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Writing response from: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING RESPONSE] HTTP/1.1 200 FROM api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Writing response from: api.openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Request to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 [PARSING HANDSHAKE] Handshake request to openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connecting to: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:40 Connected to: 188.166.99.78
+DEBUG:  2016-5-31 23:41:40 Connected to: 188.166.99.78
+DEBUG:  2016-5-31 23:41:40 Connected to: 188.166.99.78
+DEBUG:  2016-5-31 23:41:40 Connected to: 188.166.99.78
+DEBUG:  2016-5-31 23:41:41 [PARSING REQUEST] GET /img/w/03n.png HTTP/1.1
+Host: openweathermap.org
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:41 [PARSING REQUEST] GET /img/w/01n.png HTTP/1.1
+Host: openweathermap.org
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:41 [PARSING REQUEST] GET /img/w/09n.png HTTP/1.1
+Host: openweathermap.org
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:41 [PARSING REQUEST] GET /img/w/03d.png HTTP/1.1
+Host: openweathermap.org
+Connection: keep-alive
+Accept: image/webp,image/*,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+Referer: http://localhost:8080/
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8
+
+
+DEBUG:  2016-5-31 23:41:41 [PARSING RESPONSE] HTTP/1.1 200 FROM openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 [PARSING RESPONSE] HTTP/1.1 200 FROM openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 [PARSING RESPONSE] HTTP/1.1 200 FROM openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 [PARSING RESPONSE] HTTP/1.1 200 FROM openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80
+DEBUG:  2016-5-31 23:41:41 Writing response from: openweathermap.org:80

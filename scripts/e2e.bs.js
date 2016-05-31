@@ -48,23 +48,10 @@ const instance = app.listen(PORT, function(err) {
           }
         });
 
-        // child.on('error', (data) => {
-        //   console.log(data);
-        //   if(bs_local) {
-        //     bs_local.stop(function() {
-        //       console.log('Stopped browserstack');
-        //
-        //     });
-        //     instance.close();
-        //     process.exit(0);
-        //   }
-        // })
-
         child.on('exit', function() {
           if(bs_local) {
             bs_local.stop(function() {
               console.log('Stopped browserstack');
-
             });
             instance.close();
             process.exit(0);

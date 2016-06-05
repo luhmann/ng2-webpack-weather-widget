@@ -47,7 +47,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "html-loader": "^0.4.3",
-    "html-webpack-plugin": "^2.15.0",
+    "html-webpack-plugin": "^2.19.0",
     "json-loader": "^0.5.4",
     "karma": "^0.13.22",
     "karma-browserstack-launcher": "^1.0.0",

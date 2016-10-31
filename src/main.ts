@@ -12,4 +12,4 @@ if (environment.production) {
   enableProdMode();
 }
 
-bootstrap(AppComponent, [HTTP_PROVIDERS]);
+bootstrap(AppComponent, [ HTTP_PROVIDERS ]);
